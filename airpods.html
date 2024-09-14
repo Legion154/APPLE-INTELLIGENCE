@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>APPLE INTELLIGENCE : AIRPODS</title>
-    <link rel="stylesheet" href="style.css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -24,12 +23,13 @@
   <body>
     <header class="sticky z-20 top-0">
       <div
-        class="flex 2xl:hidden flex-row items-center justify-between px-5 py-4 shadow-md shadow-slate-200 text-black bg-[#D9D9D9]"
+        class="flex 2xl:hidden flex-row-reverse items-center justify-between px-5 py-4 shadow-md shadow-slate-200 text-black bg-[#D9D9D9]"
       >
-        <i
-          onclick="bars('bar')"
-          class="fa-solid fa-bars text-xl cursor-pointer"
-        ></i>
+        <div onclick="sitebar('bar')" class="flex flex-col gap-1 relative p-0.5 cursor-pointer">
+          <div class="change w-6 h-[3px] bg-black static z-10" id="change1"></div>
+          <div class="change w-6 h-[3px] bg-black" id="change2"></div>
+          <div class="change w-6 h-[3px] bg-black static z-10" id="change3"></div>
+        </div>
         <div class="flex flex-row items-center gap-5">
           <a href="index.html">
             <div
@@ -37,7 +37,7 @@
             >
               <i class="fa-solid fa-house"></i></div
           ></a>
-          <a href="ipad.html">
+          <a href="index.html">
             <div
               class="px-4 py-1 bg-white text-black rounded-xl active:opacity-50 duration-300"
             >
@@ -49,11 +49,10 @@
 
         <div
           id="bar"
-          class="fixed top-0 -left-10 z-50 flex flex-col w-0 h-screen px-5 py-3 gap-20 overflow-hidden bg-[#D9D9D9]"
+          class="fixed top-0 -left-10 z-50 flex flex-col w-0 h-screen px-5 py-5 gap-20 overflow-hidden bg-[#D9D9D9]"
         >
           <i
-            onclick="xmark('bar')"
-            class="fa-solid fa-xmark text-3xl text-black self-end cursor-pointer"
+            class="fa-brands fa-apple text-6xl text-black self-center cursor-pointer"
           ></i>
           <div class="flex flex-col gap-7">
             <a href="index.html">
