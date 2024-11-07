@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>APPLE INTELLIGENCE</title>
+    <link rel="stylesheet" href="style.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="shortcut icon" href="./images/apple.webp" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -24,9 +25,9 @@
   <body>
     <header class="sticky z-20 top-0">
       <div
-        class="flex 2xl:hidden flex-row-reverse items-center justify-between px-5 py-4 shadow-md shadow-slate-200 text-black bg-[#D9D9D9]"
+        class="group flex 2xl:hidden flex-row-reverse items-center justify-between px-5 py-4 shadow-sm shadow-slate-200 text-black bg-[#D9D9D9]"
       >
-        <div onclick="sitebar('bar')" class="flex flex-col gap-1 relative p-0.5 cursor-pointer">
+        <div class="flex flex-col gap-1 relative p-0.5 cursor-pointer">
           <div class="change w-6 h-[3px] bg-black" id="change1"></div>
           <div class="change w-6 h-[3px] bg-black" id="change2"></div>
           <div class="change w-6 h-[3px] bg-black" id="change3"></div>
@@ -49,8 +50,7 @@
         <!-- MENU BAR -->
 
         <div
-          id="bar"
-          class="fixed top-0 -left-10 z-50 flex flex-col w-0 h-screen px-5 py-5 gap-20 overflow-hidden bg-[#D9D9D9]"
+          class="group-hover:w-[300px] group-hover:left-0 fixed top-0 -left-10 z-50 flex flex-col w-0 h-screen px-5 py-5 gap-20 overflow-hidden duration-300 bg-[#D9D9D9]"
         >
           <i
             class="fa-brands fa-apple text-6xl text-black self-center cursor-pointer"
@@ -806,6 +806,5 @@
         </div>
       </div>
     </footer>
-    <script src="app.js"></script>
   </body>
 </html>
